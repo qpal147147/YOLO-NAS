@@ -1,0 +1,13 @@
+randomAffine_degree: 10.0  # (probability) default:10
+randomAffine_scales: [0.1, 2.0]  # (+/- degree) default:[0.1, 2.0]
+randomAffine_shear: 2.0   # (+/- degree) default:2.0
+randomAffine_border: 114  # (0~255 fill value) default:114
+hsv: 1.0  # (probability) default:1.0
+hsv_h: 5  # (fraction) default:5
+hsv_s: 30  # (fraction) default:30
+hsv_v: 30  # (fraction) default:30
+flipud: 0.5  # image flip up-down (probability) default:0.5
+fliplr: 0.5  # image flip left-right (probability) default:0.5
+mosaic: 1.0  # image mosaic (probability) default:1.0
+mixup: 0.0  # image mixup (probability) default:0.0
+mixup_scale: [0.5, 1.5] #(fraction) default:[0.5, 1.5]
