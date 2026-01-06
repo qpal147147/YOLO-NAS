@@ -62,9 +62,9 @@
 
    |   Model    | Model Name | Dataset | Resolution | mAP<sup>val<br>0.5:0.95 | :arrow_down: |
    |:----------:|:----------:|:-------:|:----------:|:-----------------------:|:--------:|
-   | YOLO-NAS S | yolo_nas_s |   COCO  |   640x640  |  47.5(FP16) 47.03(INT8) | [Download]() |
-   | YOLO-NAS M | yolo_nas_m |   COCO  |   640x640  |  51.55(FP16) 51.0(INT8) | [Download]() |
-   | YOLO-NAS L | yolo_nas_l |   COCO  |   640x640  |  52.22(FP16) 52.1(INT8) | [Download]() |
+   | YOLO-NAS S | yolo_nas_s |   COCO  |   640x640  |  47.5(FP16) 47.03(INT8) | [Download](https://github.com/qpal147147/YOLO-NAS/releases/download/v1.0.0/yolo_nas_s_coco.pth) |
+   | YOLO-NAS M | yolo_nas_m |   COCO  |   640x640  |  51.55(FP16) 51.0(INT8) | [Download](https://github.com/qpal147147/YOLO-NAS/releases/download/v1.0.0/yolo_nas_m_coco.pth) |
+   | YOLO-NAS L | yolo_nas_l |   COCO  |   640x640  |  52.22(FP16) 52.1(INT8) | [Download](https://github.com/qpal147147/YOLO-NAS/releases/download/v1.0.0/yolo_nas_l_coco.pth) |
 
    [^1]: https://github.com/Deci-AI/super-gradients/blob/master/documentation/source/model_zoo.md#pretrained-object-detection-pytorch-checkpoints
 
