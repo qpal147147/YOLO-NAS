@@ -38,23 +38,23 @@
    datasets
    └── project_name  # Dataset root
       ├── images
-      │  ├── train
-      │  │   ├── *.jpg(or others format)
-      │  │   ├── 0001.jpg
-      │  │   └── ...
-      │  ├── val
-      │  │   └── *.jpg(or others format)
-      │  └── test
-      │      └── *.jpg(or others format)
+      │   ├── train
+      │   │   ├── *.jpg(or others format)
+      │   │   ├── 0001.jpg
+      │   │   └── ...
+      │   ├── val
+      │   │   └── *.jpg(or others format)
+      │   └── test
+      │       └── *.jpg(or others format)
       └── labels
-            ├── train
-            │   ├── *.txt
-            │   ├── 0001.txt
-            │   └── ...
-            ├── val
-            │   └── *.txt
-            └── test/
-               └── *.txt
+          ├── train
+          │   ├── *.txt
+          │   ├── 0001.txt
+          │   └── ...
+          ├── val
+          │   └── *.txt
+          └── test/
+              └── *.txt
    ```
 
 ## Models
@@ -108,14 +108,18 @@
    }
    ```
 ### Training
-  * If you don't want to download the model from the internet, you can use `--ckpt` to specify the model path.
-    ```bash
-    python train.py -m yolo_nas_s --ckpt yolo_nas_s_coco.pth --img 640 --ch 3 --gpu --batch-size 32 --epochs 100
-    ```
-  * Resume Training
-    ```bash
-    python train.py -m yolo_nas_s --img 640 --ch 3 --gpu --batch-size 32 --epochs 100 --resume runs/checkpoints/exp/RUN_20260101_010101_000001/ckpt_latest.pth
-    ```
+   * Use a pretrained model
+     ```bash
+     python train.py -m yolo_nas_s --pretrain --img 640 --ch 3 --gpu --batch-size 32 --epochs 100
+     ```
+   * If you don't want to download the model from the internet, you can use `--ckpt` to specify the model path.
+      ```bash
+      python train.py -m yolo_nas_s --ckpt yolo_nas_s_coco.pth --img 640 --ch 3 --gpu --batch-size 32 --epochs 100
+      ```
+   * Resume Training
+      ```bash
+      python train.py -m yolo_nas_s --img 640 --ch 3 --gpu --batch-size 32 --epochs 100 --resume runs/checkpoints/exp/RUN_20260101_010101_000001/ckpt_latest.pth
+      ```
     
 > [!TIP]
 > 1. You can use [Weights & Biases (wandb)](https://wandb.ai/) to monitor the model status during training in real time by enabling the `--wandb` flag.
